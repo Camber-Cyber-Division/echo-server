@@ -5,45 +5,33 @@ Instructions
 ------------
 
 1. If you do not already have a github account, create one.
-
 2. Fork this project.
-
 3. Update the LICENSE file with whatever license you prefer.
-
 4. Add a copyright, license, and warranty notice at the top of each source file
    you create.
-
  * If you use the LICENSE file included, the information you need to include at
    the top of each source file can be found in the *License* section of this
    README. Just change __your-name-here__ to your full name.
-
 5. Add a hello world program written in C to the project. The program should
    compile with GCC on a x86\_64 GNU/Linux system running Debian Stable. It
    will be compiled with the following flags:
 
         gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb hello.c -o hello
-
 6. Create an echo server.  It should be accessible via TCP on 127.0.0.1:7777.
-
  * The application will be compiled on Debian GNU/Linux using GCC with the
    following command:
 
         gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb echo.c -o echo
-
  * It will be tested with:
 
         telnet 127.0.0.1 7777
-
  * The application should read up to 1 packet worth of data, write that data
    back to the client over the established connection, and then close the
    connection.  The server does not need to support concurrent connections.
    However, it should support multiple connections in serial.
-
 7. Extra Credit: Modify the echo server program to log to standard error the IP
    address and port that the client has connected from.
-
 8. Add any notes regarding your solution to the *Solution Notes* section.
-
 9. Submit a link to your completed solution as well as any questions to
    <jcook@camber.com>.
 
