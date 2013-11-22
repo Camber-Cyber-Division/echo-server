@@ -16,15 +16,15 @@ Instructions
    compile with GCC on a x86\_64 GNU/Linux system running Debian Stable. It
    will be compiled with the following flags:
 
-        gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb hello.c -o hello
+          gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb hello.c -o hello
 6. Create an echo server.  It should be accessible via TCP on 127.0.0.1:7777.
  * The application will be compiled on Debian GNU/Linux using GCC with the
    following command:
 
-        gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb echo.c -o echo
+          gcc -std=c99 -pedantic -Wall -Werror -Wextra -O0 -g -ggdb echo.c -o echo
  * It will be tested with:
 
-        telnet 127.0.0.1 7777
+          telnet 127.0.0.1 7777
  * The application should read up to 1 packet worth of data, write that data
    back to the client over the established connection, and then close the
    connection.  The server does not need to support concurrent connections.
@@ -32,7 +32,10 @@ Instructions
 7. Extra Credit: Modify the echo server program to log to standard error the IP
    address and port that the client has connected from.
 8. Add any notes regarding your solution to the *Solution Notes* section.
-9. Submit a link to your completed solution as well as any questions to
+9. Bonus Points: Like you, we are pedantic nerds. Please let us know if you
+   find anything during this process or in our instructions that could use
+   improvement.
+10. Submit a link to your completed solution as well as any questions to
    <jcook@camber.com>.
 
 
@@ -45,19 +48,19 @@ Solution Notes
 License
 -------
 
-This file is part of Shortest-Path-Server.
+This file is part of Echo-Server.
 
 Copyright (c) 2013 __your-name-here__
 
-Shortest-Path-Server is free software: you can redistribute it and/or modify it
+Echo-Server is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
 later version.
 
-Shortest-Path-Server is distributed in the hope that it will be useful, but
+Echo-Server is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
 FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
 details.
 
 You should have received a copy of the GNU General Public License along with
-Shortest-Path-Server.  If not, see <http://www.gnu.org/licenses/>.
+Echo-Server.  If not, see <http://www.gnu.org/licenses/>.
