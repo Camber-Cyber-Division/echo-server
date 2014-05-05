@@ -36,7 +36,7 @@ Instructions
    find anything during this process or in our instructions that could use
    improvement.
 10. Submit a link to your completed solution as well as any questions to
-   <jcook@camber.com>.
+   <rreiher@camber.com>.
 
 
 Solution Notes
