@@ -25,12 +25,15 @@ Instructions
  * It will be tested with:
 
           telnet 127.0.0.1 7777
- * The application should read up to 1 packet worth of data, write that data
+ * The application should read up to 64KiB of data then write that data
    back to the client over the established connection, and then close the
    connection.  The server does not need to support concurrent connections.
    However, it should support multiple connections in serial.
-7. Extra Credit: Modify the echo server program to log to standard error the IP
+7. Extra Credit: 
+ * Modify the echo server program to log to standard error the IP
    address and port that the client has connected from.
+ * Modify the echo server program to accept both TCP and UDP connections
+ * Modify the echo server program to accept arbitrarily long NULL terminated strings on TCP port 7778
 8. Add any notes regarding your solution to the *Solution Notes* section.
 9. Bonus Points: Like you, we are pedantic nerds. Please let us know if you
    find anything during this process or in our instructions that could use
